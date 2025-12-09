@@ -57,6 +57,31 @@ func (list *SingleLinkedList) insertLast(val int) {
 	list.Size++
 }
 
+func (list *SingleLinkedList) deleteLast() int {
+	if list.Tail == nil {
+		panic("cannot delete from an empty list")
+	}
+
+	if list.Size == 1 {
+		val := list.Head.Data
+		list.deleteFirst()
+		return val
+	}
+
+	val := list.Tail.Data
+	tempNode := list.Head
+
+	for i := 0; i < list.Size-2; i++ {
+		tempNode = tempNode.Next
+	}
+
+	tempNode.Next = nil
+	list.Tail = tempNode
+	list.Size--
+
+	return val
+}
+
 func (list *SingleLinkedList) insert(val, pos int) {
 	node := &Node{Data: val}
 
