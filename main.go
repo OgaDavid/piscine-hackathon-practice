@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	fmt.Println(FishAndChips(4))
-	fmt.Println(FishAndChips(9))
-	fmt.Println(FishAndChips(6))
+	fmt.Println(HashCode("A"))
+	fmt.Println(HashCode("AB"))
+	fmt.Println(HashCode("BAC"))
+	fmt.Println(HashCode("Hello World"))
 }
