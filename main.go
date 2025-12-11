@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println(HashCode("A"))
-	fmt.Println(HashCode("AB"))
-	fmt.Println(HashCode("BAC"))
-	fmt.Println(HashCode("Hello World"))
+	fmt.Print(LastWord("this        ...       is sparta, then again, maybe    not"))
+	fmt.Print(LastWord(" lorem,ipsum "))
+	fmt.Print(LastWord(" "))
 }
