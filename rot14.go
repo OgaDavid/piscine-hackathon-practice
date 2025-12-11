@@ -8,7 +8,7 @@ func isUpper(c rune) bool {
 	return c >= 'A' && c <= 'Z'
 }
 
-func isLower(c rune) bool {
+func isLowerCase(c rune) bool {
 	return c >= 'a' && c <= 'z'
 }
 
@@ -17,7 +17,7 @@ func Rot14(str string) string {
 	result := make([]rune, len(str))
 
 	for i, v := range str {
-		if isLower(v) {
+		if isLowerCase(v) {
 			newChar := 'a' + (v-'a'+14)%26
 			result[i] = newChar
 		} else if isUpper(v) {
