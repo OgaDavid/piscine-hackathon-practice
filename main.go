@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(FindPrevPrime(5))
+	fmt.Println(RetainFirstHalf("Hola how you dey now"))
 	fmt.Println(FindPrevPrime(4))
 }
