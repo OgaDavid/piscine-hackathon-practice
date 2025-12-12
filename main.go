@@ -1,12 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(RepeatAlpha("abc"))
-	fmt.Println(RepeatAlpha("Choumi."))
-	fmt.Println(RepeatAlpha(""))
-	fmt.Println(RepeatAlpha("abacadaba 01!"))
+	fmt.Println(FindPrevPrime(5))
+	fmt.Println(FindPrevPrime(4))
 }
