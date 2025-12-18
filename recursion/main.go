@@ -8,5 +8,6 @@ func main() {
 	// fmt.Println(Fibonacci(7))
 	// fmt.Println(BinarySearch(arr, 28, 0, len(arr)-1))
 	// fmt.Println(IterativeFactorial(5))
-	fmt.Println(SumOfDigits(1342))
+	// fmt.Println(SumOfDigits(1342))
+	fmt.Println(RevNum(937484))
 }
